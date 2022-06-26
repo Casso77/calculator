@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main>
+        <h2>Casso Calculator</h2>
+
+<!-- defining the input fields -->
+        <input type="text" id="num1" name="num1" size="8"><br>
+        <input type="text" id="num2" name="num2" size="8"><br>
+
+<!-- putting the operands in a container to enable grid css -->
+        <div class="operands">
+            <button class="add" onclick="add()">+</button>
+            <button class="subtract" onclick="subtract()">-</button>
+            <button class="multiply" onclick="multiply()">*</button>
+            <button class="divide" onclick="divide()">/</button>
+        </div>
+
+<!-- putting the clear and equals to buttons in a container to enable grid css -->
+        <div class="output">
+            <button type="button" class="clear" onclick="clear()">Clear</button>
+            <button type="button" class="result" onclick="result()">=</button>
+        </div>
+    </main>
+
+
+
+   <script src="calc.js"></script> 
 </body>
 </html>
