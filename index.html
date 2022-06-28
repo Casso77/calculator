@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main>
+      
+
+      <div class="container">
         <h2>Casso Calculator</h2>
+        <!-- defining the input fields -->
+        <div class="num1">
+          <input type="text" id="num1" name="num1" size="8" />
+        </div>
+        <br />
+        <div class="num2">
+          <input type="text" id="num2" name="num2" size="8" />
+        </div>
+        <br />
 
-<!-- defining the input fields -->
-        <input type="text" id="num1" name="num1" size="8"><br>
-        <input type="text" id="num2" name="num2" size="8"><br>
+        <!-- putting the operands in a container to enable grid css -->
 
-<!-- putting the operands in a container to enable grid css -->
-        <div class="operands">
-            <button class="add" onclick="add()">+</button>
-            <button class="subtract" onclick="subtract()">-</button>
-            <button class="multiply" onclick="multiply()">*</button>
-            <button class="divide" onclick="divide()">/</button>
+        <div class="add_grid">
+          <button class="add" onclick="add()">+</button>
+        </div>
+        <div class="subtract_grid">
+          <button class="subtract" onclick="subtract()">-</button>
+        </div>
+        <div class="multiply_grid">
+          <button class="multiply" onclick="multiply()">*</button>
+        </div>
+        <div class="divide_grid">
+          <button class="divide" onclick="divide()">/</button>
         </div>
 
-<!-- putting the clear and equals to buttons in a container to enable grid css -->
-        <div class="output">
-            <button type="button" class="clear" onclick="clear()">Clear</button>
-            <button type="button" class="result" onclick="result()">=</button>
+        <!-- putting the clear and equals to buttons in a container to enable grid css -->
+        <div class="clear_grid">
+          <button type="button" class="clear" onclick="clear()">Clear</button>
         </div>
+        <div class="result_grid">
+          <button type="button" class="result" onclick="result()">=</button>
+        </div>
+      </div>
     </main>
 
-
-
-   <script src="calc.js"></script> 
-</body>
+    <script src="calc.js"></script>
+  </body>
 </html>

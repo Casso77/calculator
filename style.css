@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: aquamarine;
+}
+.container{
+    display: grid;
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    padding: 100px;
+    justify-content: center;
+    text-align: center;
+    grid-template-areas:
+    "a a a"
+    "b c d"
+    "b e f"
+    "g h f"
+    "g i f"
+    ;
+    gap: 10px;
+    border: 1px solid black;
+}
+
+h2{
+    text-align: center;
+    /* margin-top: 200px;
+    margin-bottom: 10px; */
+    padding-bottom: 10px;
+    grid-area: a;
+}
+
+.num1{
+    
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    grid-area: b;
+}
+.num2{
+    
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    grid-area: g;
+    align-items: right;
+    
+}
+.add{
+    
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.subtract{
+    
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.multiply{
+    
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.divide{
+    
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.clear{
+    
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.result{
+    
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+.add_grid{
+    grid-area: c;
+}
+.subtract_grid{
+    grid-area: e;
+}
+.multiply_grid{
+    grid-area: h;
+}
+.divide_grid{
+    grid-area: i;
+}
+.clear_grid{
+    grid-area: d;
+}
+.result_grid{
+    grid-area: f;
+}
+
