@@ -5,6 +5,9 @@
 body{
     background-color: aquamarine;
 }
+.input{
+    text-align: right;
+}
 .container{
     display: grid;
     width: 50%;
